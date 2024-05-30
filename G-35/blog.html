@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" class="js-color-style" href="assets/css/colors/color-1.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>e-commerce website</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo-1.png" alt="">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="shop.html" class="nav__link">Shop</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="faq.html" class="nav__link">Faq's</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="bx bx-x"></i></div>
+            </div>
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button"><i class="bx bx-user"></i></div>
+                <div class="nav__shop" id="cart-button"><i class="bx bx-shopping-bag"></i><span id="product-count">0</span></div>
+                <div class="nav__toggle" id="nav-toggle"><i class="bx bx-grid-alt"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart-tab" id="cartShop">
+        <h1>Cart</h1>
+        <div class="empty-cart-message" id="empty-cart-message" style="display: none;">
+            <img src="assets/img/cover-cart.png" alt="Empty Cart" />
+            <p>Your cart is empty</p>
+            <button class="addcart" id="shop-now-button">Shop Now</button>
+        </div>
+        <div class="listcart"></div>
+        <div class="total-price" id="total-price"><span>$l0.00</span></div>
+        <div class="btn">
+            <button class="exit" id="cart-close">CLOSE</button>
+            <button class="checkout">CHECKOUT</button>
+        </div>
+    </div>
+
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">Login</h2>
+        <form action="" class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+            <div class="login__content">
+                <label for="" class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+            <div><a href="#" class="button">Sign in</a></div>
+            <div><p class="signup">Not a member? <a href="registration.html">Sign up now</a></p></div>
+        </form>
+    </div>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <article class="article" data-bgcolor="#4d2846">
+
+        <!--=============== DISCOUNT BANNER ===============-->
+        <section class="discounts" id="discounts">
+            <h2 class="breadcrumb__title">Blog Page</h2>
+            <h3 class="breadcrumb__subtitle">Home > <span>Blog</span></h3>
+            <div class="discounts-heading">
+                <h2>Special Discounts</h2>
+                <p>Check out our latest deals on selected items!</p>
+            </div>
+            <div class="swiper-container">
+                
+                    <div class="swiper-slide discount-slide">
+                            <div class="discount-image">
+                                <img src="assets/img/new-5.png" alt="Clothes 1">
+                            </div>
+                            <div class="discount-info">
+                                <h3 class="discount-title">Special Offer</h3>
+                                <p class="discount-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <span class="discount-price">$XX.XX</span>
+                                <a href="shop.html" class="discount-link">Shop Now</a>
+                            </div>
+                    </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=============== BLOG ===============-->
+        <section class="blog section container">
+            
+            <div class="blog__container grid" id="blogContainer">
+
+                <!-- BLOG CREDIT:https://www.itscasualblog.com/ -->
+                <div class="blog__post grid">
+                    <img src="assets/img/Screenshot_1.png" alt="Clothes 1" class="blog__img">
+                    <div class="blog__info">
+                        <p class="blog__details">The age old question: “Is The Row Margaux Bag worth it?” First off, I’m not going to lie to you...</p>
+                        <h3 class="blog__title">Is The Row Margaux Bag Worth It?</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="https://www.itscasualblog.com/" class="button--link button--flex" target="_blank">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG CREDIT:https://www.itscasualblog.com/ -->
+                        
+                <div class="blog__post grid">
+                    <img src="assets/img/banner-blog.png" alt="Clothes 1" class="blog__img">
+                    <div class="blog__info">
+                        <p class="blog__details">I’m pretty sure nothing screams summer fabrication more than LINEN!!!. There are so many reasons to..</p>
+                        <h3 class="blog__title">Currently Crushing: The Fisherman Sandal</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="https://www.itscasualblog.com/blog/linen-shirts-for-women/" class="button--link button--flex" target="_blank">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BLOG CREDIT:https://www.itscasualblog.com/ -->
+                
+                <div class="blog__post grid">
+                    <img src="assets/img/blog-3.png" alt="Clothes 1" class="blog__img">
+                    <div class="blog__info">
+                        <p class="blog__details">Clearly, we’re in a shoe mood this week on It’s Casual. Earlier this week, I shared my love of...</p>
+                        <h3 class="blog__title">Currently Crushing: The Fisherman Sandal</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="https://www.itscasualblog.com/blog/fisherman-sandals/" class="button--link button--flex" target="_blank">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- BLOG CREDIT:https://www.itscasualblog.com/ -->
+                <div class="blog__post grid">
+                    <img src="assets/img/page3-banner-1.png" alt="Clothes 2" class="blog__img">
+                    <div class="blog__info">
+                        <p class="blog__details">The age old question: “Is The Row Margaux Bag worth it?” First off, I’m not going to lie to you...</p>
+                        <h3 class="blog__title">Comfortable Clothing That Are Perfect For Working From Home!</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="https://www.itscasualblog.com/" class="button--link button--flex" target="_blank">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+              <!-- BLOG CREDIT:https://www.itscasualblog.com/ -->
+                        
+                <div class="blog__post grid">
+                    <img src="assets/img/banner-blog.png" alt="Clothes 2" class="blog__img">
+                    <div class="blog__info">
+                        <p class="blog__details">I’m pretty sure nothing screams summer fabrication more than LINEN!!!. There are so many reasons to..</p>
+                        <h3 class="blog__title">Currently Crushing: The Fisherman Sandal</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="https://www.itscasualblog.com/blog/linen-shirts-for-women/" class="button--link button--flex" target="_blank">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+             <!-- BLOG CREDIT:https://www.itscasualblog.com/ -->
+                
+                <div class="blog__post grid">
+                    <img src="assets/img/blog-3.png" alt="Clothes 2" class="blog__img">
+                    <div class="blog__info">
+                        <p class="blog__details">Clearly, we’re in a shoe mood this week on It’s Casual. Earlier this week, I shared my love of...</p>
+                        <h3 class="blog__title">Currently Crushing: The Fisherman Sandal</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="https://www.itscasualblog.com/blog/fisherman-sandals/" class="button--link button--flex" target="_blank">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__post grid">
+                    <img src="assets/img/page2-banner-1.png" alt="Clothes 3" class="blog__img">
+
+                    <div class="blog__info">
+                        <p class="blog__details">There was a time when I almost felt embarrassed to sleep in a Malm bed, to store my magazines in a Kallax, and to fill votives with Glimma...</p>
+                        <h3 class="blog__title">It’s Official: We’ve Reached Peak Ikea</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="https://www.vogue.com/article/ikea-clothing-pitti-uomo-street-style" class="button--link button--flex">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+             <!-- BLOG CREDIT:https://www.itscasualblog.com/ -->
+                <div class="blog__post grid">
+                    <img src="assets/img/page2-banner-2.png" alt="Clothes 3" class="blog__img">
+
+                    <div class="blog__info">
+                        <p class="blog__details">Could it Be the Beiber effect?...</p>
+                        <h3 class="blog__title">Russell Westbrook’s New Look Is Nothing But Net</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="#" class="button--link button--flex">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- BLOG CREDIT:https://www.itscasualblog.com/ -->
+                <div class="blog__post grid">
+                    <img src="assets/img/page2-banner.png" alt="Clothes 3" class="blog__img">
+
+                    <div class="blog__info">
+                        <p class="blog__details">OOOOOH BOY do I love a controversial trend. There are actually a few of them around right now, but today we’re focusing on a big one...</p>
+                        <h3 class="blog__title">Currently Crushing: Mesh Flats</h3>
+                        <p class="blog__date">By Admin / Jan 12,2022 / </p>
+                        <div class="read__more">
+                            <a href="#" class="button--link button--flex">Read More <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="pagination" id="pagination">
+                <a href="#" class="pagination__icon pagination__icon--disabled" aria-disabled="true">
+                    <i class="bx bx-chevron-left"></i>
+                </a>
+                <a href="#" class="current">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="pagination__icon">
+                    <i class="bx bx-chevron-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== COMING SOON BANNERS ===============-->
+        <section class="coming-soon-banner" id="comingSoonBanner1">
+            <div class="content-banner">
+                <div class="banner_img">
+                    <img src="assets/img/blog-page3-coming-soon.png" alt="Coming Soon Image">
+                </div>
+                <div class="banner-font">
+                    <h1>Coming Soon</h1>
+                    <p>We're working hard to bring you something amazing! Stay tuned for updates.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coming-soon-banner" id="comingSoonBanner2">
+            <div class="content-banner">
+                <div class="banner_img">
+                    <img src="assets/img/cm-soon.jpg" alt="Coming Soon Image">
+                </div>
+                <div class="banner-font">
+                    <h1>Coming Soon</h1>
+                    <p>We're working hard to bring you something amazing! Stay tuned for updates.</p>
+                </div>
+            </div>
+        </section>
+        </article>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="index.html" class="footer__logo">
+                    <img src="assets/img/logo-1.png" alt="Logo">
+                </a>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                    <li><a href="#" class="footer__link">Customer Support</a></li>
+                    <li><a href="#" class="footer__link">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Shop</a></li>
+                    <li><a href="#" class="footer__link">Shipping mode</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Register</a></li>
+                    <li><a href="#" class="footer__link">Contact Us</a></li>
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">&#169;  <span class="footer__copy">Some of these design are taken from<br> https://www.youtube.com/watch?v=Ws69qob4veA&list=PLrKudo5h_b8DwVH6ym4oBfnvwE6IllFte</span></span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== BLOG JS ===============-->
+    <script>
+        const postsPerPage = 3; // Show 1 post per page
+        const blogContainer = document.getElementById('blogContainer');
+        const pagination = document.getElementById('pagination');
+        const blogPosts = blogContainer.getElementsByClassName('blog__post');
+        const discountsSection = document.getElementById('discounts');
+        const comingSoonBanner1 = document.getElementById('comingSoonBanner1');
+        const comingSoonBanner2 = document.getElementById('comingSoonBanner2');
+        let currentPage = 1;
+
+        function displayPosts() {
+            for (let i = 0; i < blogPosts.length; i++) {
+                blogPosts[i].style.display = 'none';
+            }
+            for (let i = (currentPage - 1) * postsPerPage; i < currentPage * postsPerPage && i < blogPosts.length; i++) {
+                blogPosts[i].style.display = 'grid';
+            }
+            updatePagination();
+            updateSections();
+        }
+
+        function updatePagination() {
+            const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+            pagination.innerHTML = '';
+
+            const leftArrow = document.createElement('a');
+            leftArrow.href = '#';
+            leftArrow.className = 'pagination__icon';
+            if (currentPage === 1) {
+                leftArrow.classList.add('pagination__icon--disabled');
+                leftArrow.setAttribute('aria-disabled', 'true');
+            }
+            leftArrow.innerHTML = '<i class="bx bx-chevron-left"></i>';
+            leftArrow.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPosts();
+                }
+            });
+            pagination.appendChild(leftArrow);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageLink = document.createElement('a');
+                pageLink.href = '#';
+                pageLink.innerText = i;
+                if (i === currentPage) {
+                    pageLink.classList.add('current');
+                }
+                pageLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage = i;
+                    displayPosts();
+                });
+                pagination.appendChild(pageLink);
+            }
+
+            const rightArrow = document.createElement('a');
+            rightArrow.href = '#';
+            rightArrow.className = 'pagination__icon';
+            if (currentPage === totalPages) {
+                rightArrow.classList.add('pagination__icon--disabled');
+                rightArrow.setAttribute('aria-disabled', 'true');
+            }
+            rightArrow.innerHTML = '<i class="bx bx-chevron-right"></i>';
+            rightArrow.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPosts();
+                }
+            });
+            pagination.appendChild(rightArrow);
+        }
+
+        function updateSections() {
+            if (currentPage === 1) {
+                discountsSection.style.display = 'block';
+            } else {
+                discountsSection.style.display = 'none';
+            }
+
+            if (currentPage === 2) {
+                comingSoonBanner1.style.display = 'block';
+            } else {
+                comingSoonBanner1.style.display = 'none';
+            }
+
+            if (currentPage === 3) {
+                comingSoonBanner2.style.display = 'block';
+            } else {
+                comingSoonBanner2.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', displayPosts);
+    </script>
+    
+</body>
+</html>

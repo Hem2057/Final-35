@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" class="js-color-style" href="assets/css/colors/color-1.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>e-commerce website</title>
+</head>
+<body>
+   
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo-1.png" alt="">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="shop.html" class="nav__link">Shop</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="faq.html" class="nav__link">Faq's</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="bx bx-x"></i></div>
+            </div>
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button"><i class="bx bx-user"></i></div>
+                <div class="nav__shop" id="cart-button"><i class="bx bx-shopping-bag"></i><span id="product-count">0</span></div>
+                <div class="nav__toggle" id="nav-toggle"><i class="bx bx-grid-alt"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart-tab" id="cartShop">
+        <h1>Cart</h1>
+        <div class="empty-cart-message" id="empty-cart-message" style="display: none;">
+            <img src="assets/img/cover-cart.png" alt="Empty Cart" />
+            <p>Your cart is empty</p>
+            <button class="addcart" id="shop-now-button">Shop Now</button>
+        </div>
+        <div class="listcart"></div>
+        <div class="total-price" id="total-price"><span>$l0.00</span></div>
+        <div class="btn">
+            <button class="exit" id="cart-close">CLOSE</button>
+            <button class="checkout">CHECKOUT</button>
+        </div>
+    </div>
+
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">Login</h2>
+        <form action="" class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+            <div class="login__content">
+                <label for="" class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+            <div><a href="#" class="button">Sign in</a></div>
+            <div><p class="signup">Not a member? <a href="registration.html">Sign up now</a></p></div>
+        </form>
+    </div>
+
+    <!--<div class="main">
+        <section class="main-slider">
+            <div class="slides">
+                <div class="slide active">
+                    <div class="slider-content">
+                        <h1>#Trending<br><span class="slider-txt">Summer Outfit</span></h1>
+                        <button class="addcart">View Details</button>
+                    </div>
+                    <div class="main-slider-img"><img src="/assets/img/cover-1.png" alt=""></div>
+                </div>
+                <div class="slide">
+                    <div class="slider-content">
+                        <h1>#Trending<br><span class="slider-txt">Winter Collection</span></h1>
+                        <button class="addcart">View Details</button>
+                    </div>
+                    <div class="main-slider-img"><img src="/assets/img/cover-2.png" alt=""></div>
+                </div>
+                <div class="slide">
+                    <div class="slider-content">
+                        <h1>#Trending<br><span class="slider-txt">Spring Fashion</span></h1>
+                        <button class="addcart">View Details</button>
+                    </div>
+                    <div class="main-slider-img"><img src="/assets/img/cover-3.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </div> -->
+    
+    <article class="Banner-content article" data-bgcolor="#4d2846" >
+        <div class="list">
+            <div class="item">
+                <img src="/assets/img/banner-1.png" alt="">
+                <div class="banner-slider">
+                    <div class="title">SUMMER TRENDING</div>
+                    <div class="slogon">Wear the Trend</div>
+                    <div class="banner-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="view-more">View Details &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">100% Pure Cotton</div>
+                    <div class="banner-content">
+                       
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    </div>
+                    <div class="banner-btn">
+                        <button>ADD TO CART</button>
+                        <button class="view-button" id="view-Button">View All</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/banner-2.png" alt="">
+                <div class="banner-slider">
+                    <div class="title">SUMMER TRENDING</div>
+                    <div class="slogon">Wear it Proud</div>
+                    <div class="banner-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="view-more">View Details &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">100% Pure Cotton</div>
+                    <div class="banner-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    </div>
+                    <div class="banner-btn">
+                        <button>ADD TO CART</button>
+                        <button class="view-button" id="view-Button">View All</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/banner-3.png" alt="">
+                <div class="banner-slider">
+                    <div class="title">SUMMER TRENDING</div>
+                    <div class="slogon">Wear Your Confidence</div>
+                    <div class="banner-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="view-more">View Details &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">100% Pure Cotton</div>
+                    <div class="banner-content">
+                       
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    </div>
+                    <div class="banner-btn">
+                        <button>ADD TO CART</button>
+                        <button class="view-button" id="view-Button">View All</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="/assets/img/banner-4.png" alt="">
+                <div class="banner-slider">
+                    <div class="title">SUMMER TRENDING</div>
+                    <div class="slogon">Unleash Your Style</div>
+                    <div class="banner-content">
+                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="view-more">View Details &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">100% Pure Cotton</div>
+                    <div class="banner-content">
+                      
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    </div>
+                    <div class="banner-btn">
+                        <button>ADD TO CART</button>
+                        <button class="view-button" id="view-Button">View All</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="assets/img/banner-5.png" alt="">
+                <div class="banner-slider">
+                    <div class="title">SUMMER TRENDING</div>
+                    <div class="slogon">Elevate Your Fashion Game</div>
+                    <div class="banner-content">
+                      
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="view-more">View Details &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">100% Pure Cotton</div>
+                    <div class="banner-content">
+                      
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    </div>
+                    <div class="banner-btn">
+                        <button>ADD TO CART</button>
+                        <button class="view-button" id="view-Button">View All</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="assets/img/banner-7.png" alt="">
+                <div class="banner-slider">
+                    <div class="title">SUMMER TRENDING</div>
+                    <div class="slogon">Your Style, Your Story</div>
+                    <div class="banner-content">
+                        <!-- 20 lorem -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="view-more">View Details &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">100% Pure Cotton</div>
+                    <div class="banner-content">
+                      
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    </div>
+                    <div class="banner-btn">
+                        <button>ADD TO CART</button>
+                        <button class="view-button" id="view-Button">View All</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slideBtn">
+            <button id="prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button id="next"><i class="fa-solid fa-arrow-right-long"></i></button>
+            <button id="back"><i class="fa-solid fa-arrow-left-long"></i> </button>
+        </div>
+    </article>
+<article class="main-container article" data-bgcolor="#5f8693">
+    <div class="product-persona">
+        <div class="product-classifier">
+            <ul class="products-class">
+                <li onclick="showCategory('trending')">Trending</li>
+                <li onclick="showCategory('new-arrivals')">New Arrivals</li>
+                <li onclick="showCategory('sales')">Sales</li>
+            </ul>
+            <div class="search-product">
+                <input type="text" placeholder="Search products..." id="search-input">
+                <button id="search-button"><i class="bx bx-search"></i></button>
+            </div>
+        </div>
+        <section class="product-container">
+            <div class="listproduct" id="trending-products">
+                <div class="item">
+                    <div class="hilight-content">50% OFF</div>
+                    <img src="/assets/img/product-2.png" alt="">
+                    <h2>Product 1</h2>
+                    <div class="price">$2000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                
+                <div class="item">
+                    <div class="hilight-content">40% OFF</div>
+                    <img src="/assets/img/product-2.png" alt="">
+                    <h2>Product 2</h2>
+                    <div class="price">$2000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">New</div>
+                    <img src="/assets/img/product-3.png" alt="">
+                    <h2>Product 3</h2>
+                    <div class="price">$2000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">70% OFF</div>
+                    <img src="/assets/img/product-1.png" alt="">
+                    <h2>Product 4</h2>
+                    <div class="price">$2000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">Sale</div>
+                    <img src="/assets/img/product-2.png" alt="">
+                    <h2>Product 5</h2>
+                    <div class="price">$2000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">New</div>
+                    <img src="/assets/img/product-3.png" alt="">
+                    <h2>Product 6</h2>
+                    <div class="price">$2000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+            </div>
+            <div class="listproduct" id="new-arrivals-products" style="display:none;">
+                <div class="item">
+                    <div class="hilight-content">New</div>
+                    <img src="/assets/img/new-1.png" alt="">
+                    <h2>new 1</h2>
+                    <div class="price">$1500</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">New</div>
+                    <img src="/assets/img/new-2.png" alt="">
+                    <h2>new 2</h2>
+                    <div class="price">$1500</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">New</div>
+                    <img src="/assets/img/new-3.png" alt="">
+                    <h2>new 3</h2>
+                    <div class="price">$1500</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">New</div>
+                    <img src="/assets/img/new-1.png" alt="">
+                    <h2>new 4</h2>
+                    <div class="price">$1500</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">New</div>
+                    <img src="/assets/img/new-2.png" alt="">
+                    <h2>new 5</h2>
+                    <div class="price">$1500</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">New</div>
+                    <img src="/assets/img/new-3.png" alt="">
+                    <h2>new 6</h2>
+                    <div class="price">$1500</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+            </div>
+            <div class="listproduct" id="sales-products" style="display:none;">
+                <div class="item">
+                    <div class="hilight-content">20% OFF</div>
+                    <img src="/assets/img/new-4.png" alt="">
+                    <h2>sales 1</h2>
+                    <div class="price">$1000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">50% OFF</div>
+                    <img src="/assets/img/new-5.png" alt="">
+                    <h2>sales 2</h2>
+                    <div class="price">$1000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">20% OFF</div>
+                    <img src="/assets/img/new-6.png" alt="">
+                    <h2>sales 3</h2>
+                    <div class="price">$1000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">10% OFF</div>
+                    <img src="/assets/img/new-4.png" alt="">
+                    <h2>sales 4</h2>
+                    <div class="price">$1000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">60% OFF</div>
+                    <img src="/assets/img/new-5.png" alt="">
+                    <h2>sales 5</h2>
+                    <div class="price">$1000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+                <div class="item">
+                    <div class="hilight-content">40% OFF</div>
+                    <img src="/assets/img/new-6.png" alt="">
+                    <h2>sales 6</h2>
+                    <div class="price">$1000</div>
+                    <button class="addcart">Add to cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</article>
+<article class="discount-content article" data-bgcolor="#122c48">
+    <div class="discount-title">
+        <h1>Summer Sale</h1>
+            <img src="assets/img/discount-sale.png" alt="">
+    </div>
+    <section class="discount section">
+        <div class="discount__container container grid">
+            <img src="assets/img/discount.png" alt="" class="discount__img">
+            <div class="discount__data">
+                <h2 class="discount__title">50% Discount <br> On New Products</h2>
+                <a href="#" class="button">Go to new</a>
+            </div>
+        </div>
+    </section>
+    <section class="discount section">
+        <div class="discount__container container grid">
+            <img src="assets/img/discount.png" alt="" class="discount__img">
+            <div class="discount__data">
+                <h2 class="discount__title">50% Discount <br> On New Products</h2>
+                <a href="#" class="button">Go to new</a>
+            </div>
+        </div>
+    </section>
+</article>
+<article class="article low-content " data-bgcolor="#353234">
+    <section class="steps section container">
+        <div class="steps__bg">
+            <h2 class="section__title">How to order products <br> from CottonHub</h2>
+            <div class="steps__container grid">
+                <div class="steps__card">
+                    <div class="steps__card-number">01</div>
+                    <h3 class="steps__card-title">Choose Products</h3>
+                    <p class="steps__card-description">We have several varieties products you can choose from.</p>
+                </div>
+                <div class="steps__card">
+                    <div class="steps__card-number">02</div>
+                    <h3 class="steps__card-title">Place an order</h3>
+                    <p class="steps__card-description">Once your order is set, we move to the next step which is the shipping.</p>
+                </div>
+                <div class="steps__card">
+                    <div class="steps__card-number">03</div>
+                    <h3 class="steps__card-title">Get order delivered</h3>
+                    <p class="steps__card-description">Our delivery process is easy, you receive the order direct to your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features section">
+        <div class="card-container container">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Easy Return </h3>
+                        <p><span>Full refund</span></p>
+                        <p>we offer an easy return policy to ensure your peace of mind with every purchase.</p>
+                        <img src="assets/img/return.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Free Shipping </h3>
+                        <p><span>Upto $999.99</span></p>
+                        <p>making the overall shopping experience more affordable and attractive..</p>
+                        <img src="assets/img/Free-shipping.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Heavy Discount</h3>
+                        <p><span>Upto 70%</span></p>
+                        <p>Get Heavy Discount on a wide range of products</p>
+                        <img src="assets/img/large-discount.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter section">
+        <div class="newsletter__container container">
+            <h2 class="section__title">Our Newsletter</h2>
+            <p class="newsletter__description">Promotion new products and sales. Directly to your inbox</p>
+            <form action="" class="newsletter__form">
+                <input type="text" placeholder="Enter your email" class="newsletter__input">
+                <button class="button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+</article>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="index.html" class="footer__logo">
+                    <img src="assets/img/logo-1.png" alt="">
+                </a>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                    <li><a href="#" class="footer__link">Customer Support</a></li>
+                    <li><a href="#" class="footer__link">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Shop</a></li>
+                    <li><a href="#" class="footer__link"></a></li>
+                    <li><a href="#" class="footer__link">Shipping mode</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Register</a></li>
+                    <li><a href="#" class="footer__link">Contact Us</a></li>
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">&#169; Hem. All rights reserved</span>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up"><i class="bx bx-up-arrow-alt scrollup__icon"></i></a> 
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Add event listener for each element with class 'view-button'
+        document.querySelectorAll('.view-button').forEach(function(button) {
+            button.addEventListener('click', function() {
+                window.location.href = 'details.html';
+            });
+        });
+    </script>
+</body>
+
+</html>
